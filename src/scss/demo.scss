@@ -1,0 +1,48 @@
+// 
+// Demo styles
+// 
+
+$color-green:               #3BFF45;
+$color-cyan:                #65fcde;
+$color-blue:                #2d81ff;
+$color-purple:              #9f22ff;
+$color-magenta:             #ff229f;
+$color-red:                 #ff161c;
+$color-orange:              #ff7139;
+$color-yellow:              #f7ee00;
+
+div {
+    box-sizing: border-box;
+}
+
+.bg-green {
+    background-color: $color-green;
+}
+
+.bg-cyan {
+    background-color: $color-cyan;
+}
+
+.bg-blue {
+    background-color: $color-blue;
+}
+
+.bg-purple {
+    background-color: $color-purple;
+}
+
+.bg-magenta {
+    background-color: $color-magenta;
+}
+
+.bg-red {
+    background-color: $color-red;
+}
+
+.bg-orange {
+    background-color: $color-orange;
+}
+
+.bg-yellow {
+    background-color: $color-yellow;
+}

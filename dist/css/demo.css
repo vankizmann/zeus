@@ -1,0 +1,36 @@
+div {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.bg-green {
+  background-color: #3BFF45;
+}
+
+.bg-cyan {
+  background-color: #65fcde;
+}
+
+.bg-blue {
+  background-color: #2d81ff;
+}
+
+.bg-purple {
+  background-color: #9f22ff;
+}
+
+.bg-magenta {
+  background-color: #ff229f;
+}
+
+.bg-red {
+  background-color: #ff161c;
+}
+
+.bg-orange {
+  background-color: #ff7139;
+}
+
+.bg-yellow {
+  background-color: #f7ee00;
+}

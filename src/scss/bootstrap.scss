@@ -1,0 +1,111 @@
+@import "mixins.scss";
+
+$g-prefix:          'g';
+
+$g-margin:          20px;
+$g-padding:         20px;
+
+$g-grid-s:          640px;
+$g-grid-m:          960px;
+$g-grid-l:          1280px;
+
+.#{$g-prefix}-frame {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (min-width: $g-grid-s) {
+    .#{$g-prefix}-frame {
+        max-width: $g-grid-s;
+    }
+}
+
+@media (min-width: $g-grid-m) {
+    .#{$g-prefix}-frame {
+        max-width: $g-grid-m;
+    }
+}
+
+@media (min-width: $g-grid-l) {
+    .#{$g-prefix}-frame {
+        max-width: $g-grid-l;
+    }
+}
+
+@include g-ratio('', $g-prefix);
+
+@media (min-width: $g-grid-s) {
+    @include g-ratio(\@s, $g-prefix);
+}
+
+@media (min-width: $g-grid-m) {
+    @include g-ratio(\@m, $g-prefix);
+}
+
+@media (min-width: $g-grid-l) {
+    @include g-ratio(\@l, $g-prefix);
+}
+
+@include g-display('', $g-prefix);
+
+@media (min-width: $g-grid-s) {
+    @include g-display(\@s, $g-prefix);
+}
+
+@media (min-width: $g-grid-m) {
+    @include g-display(\@m, $g-prefix);
+}
+
+@media (min-width: $g-grid-l) {
+    @include g-display(\@l, $g-prefix);
+}
+
+@include g-position('', $g-prefix);
+
+@media (min-width: $g-grid-s) {
+    @include g-position(\@s, $g-prefix);
+}
+
+@media (min-width: $g-grid-m) {
+    @include g-position(\@m, $g-prefix);
+}
+
+@media (min-width: $g-grid-l) {
+    @include g-position(\@l, $g-prefix);
+}
+
+@include g-margin($g-margin, '', $g-prefix);
+@include g-padding($g-padding, '', $g-prefix);
+
+@media (min-width: $g-grid-s) {
+    @include g-margin($g-margin, \@s, $g-prefix);
+    @include g-padding($g-padding, \@s, $g-prefix);
+}
+
+@media (min-width: $g-grid-m) {
+    @include g-margin($g-margin, \@m, $g-prefix);
+    @include g-padding($g-padding, \@m, $g-prefix);
+}
+
+@media (min-width: $g-grid-l) {
+    @include g-margin($g-margin, \@l, $g-prefix);
+    @include g-padding($g-padding, \@l, $g-prefix);
+}
+
+@include g-flex-grid(12, '', $g-prefix);
+@include g-flex-grid(10, '', $g-prefix);
+
+@media (min-width: $g-grid-s) {
+    @include g-flex-grid(12, \@s, $g-prefix);
+    @include g-flex-grid(10, \@s, $g-prefix);
+}
+
+@media (min-width: $g-grid-m) {
+    @include g-flex-grid(12, \@m, $g-prefix);
+    @include g-flex-grid(10, \@m, $g-prefix);
+}
+
+@media (min-width: $g-grid-l) {
+    @include g-flex-grid(12, \@l, $g-prefix);
+    @include g-flex-grid(10, \@l, $g-prefix);
+}
