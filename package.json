@@ -1,5 +1,12 @@
 {
-  "private": true,
+  "name": "zeus",
+  "version": "1.0.0",
+  "description": "SASS Helper",
+  "main": "webpack.mix.js",
+  "repository": "https://github.com/vankizmann/zeus",
+  "author": "Eduard Kizmann <kizmann@protonmail.ch>",
+  "license": "MIT",
+  "private": false,
   "scripts": {
     "icons": "node ./resources/src/util/icons.js",
     "dev": "npm run development",
